@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { Distortion  } from './components/distortion';
+import { Flies } from './components/flies';
+import { SplitColor } from './components/splitColor';
+import { LiquidDistortion } from './components/liquidDistortion';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <h1>Blotter.Js in ReactJs</h1>
+        <p>Distortion Text</p>
+        <Distortion text={"Distortion Text"} />
+        <hr />
+        <p>Flies Material Text</p>
+        <Flies text={"Flies Text"} />
+        <hr />
+        <p>Liquid Distortion Text</p>
+        <LiquidDistortion text={"Liquid Distortion Text"} />
+        <hr />
+        <p>Split Color Text</p>
+        <SplitColor text={"Split Color Text"} />
+        <hr />
+      </div>
     </div>
   );
 }
